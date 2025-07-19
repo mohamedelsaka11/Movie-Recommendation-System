@@ -36,7 +36,7 @@ if st.button("🚀 Recommend Similar Movies"):
             st.success("Top similar movies:")
             for _, row in recommendations.iterrows():
                 movie_title = row['title']
-                plot, poster = get_movie_details(movie_title, api_key)  # Fixed here ✅
+                plot, poster = get_movie_details(movie_title, api_key) 
 
                 with st.container():
                     col1, col2 = st.columns([1, 3])
